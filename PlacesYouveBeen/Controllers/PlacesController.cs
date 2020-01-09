@@ -28,10 +28,7 @@ namespace PlacesYouveBeen.Controllers
         {
             Place myplaces = new Place(cityname, 
              picturelink, journal, lengthofstay);
-            //list.addPlace(places);
-            // Console.WriteLine("This line.");
-            // Console.WriteLine("City name: "+cityname + ", Picture link: " + picturelink + ", Journal: " +journal +
-            // ", Length of the stay: " + lengthofstay);
+         
 
             return RedirectToAction("Index");
         }

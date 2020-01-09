@@ -16,11 +16,15 @@
     @foreach (Place place in Model )
     {
       
-        <li> @place.toString()</li>
-    }
+      <li> @place.toString()</li>
+      <img src=@place.getPictureLink() />
+    } 
   
 </ul>
-<a href="/places/new">Add a new place.</a>
+@* @Model.toString() *@
+@* string str = @Model.getPictureLink(); *@
+<a href="/places/new">Add a new place.</a> 
+ 
 <form action="/places/delete" method="post">
   <button type="submit" class="btn btn-info" name="button">Clear All Places</button>
 </form>

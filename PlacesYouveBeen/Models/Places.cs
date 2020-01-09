@@ -13,6 +13,11 @@ namespace PlacesYouveBeen.Models
         private int id;
         private static List<Place> placeslist = new List<Place>{};
 
+        public Place()
+        {
+
+        }
+
         public Place(string cityname, string picturelink, string journal, int lengthofstay)
         {
             this.cityname = cityname;
@@ -80,6 +85,7 @@ namespace PlacesYouveBeen.Models
             return this.id;
         }
 
+
          public static List<Place> getAllPlaces()
         {
             return placeslist;
@@ -94,7 +100,7 @@ namespace PlacesYouveBeen.Models
         }
         public string toString()
         {
-            string result ="City name: "+this.cityname + ", Picture link: " + this.picturelink + ", Journal: " +this.journal +
+            string result ="City name: "+this.cityname + ", Journal: " +this.journal +
             ", Length of the stay: " + this.lengthofstay  + ", Id: " + this.id;
             return result;
         }
